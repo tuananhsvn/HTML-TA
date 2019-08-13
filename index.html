@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</head>
+<body>
+<nav>
+  <ul>
+    <a href="#"><li>Gioi thieu</li></a>
+    <a href="#"><li>Qua trinh cong tac</li></a>
+    <a href="#"><li>Ky nang</li></a>
+    <a href="#"><li>So thich, lien he</li></a>
+  </ul>
+  <div class="handle">Menu</div>
+</nav>
+<script>
+  $('.handle').on('click', function () {
+    $('nav ul').toggleClass('showing');
+  })
+</script>
+
+
+<div class="grid-container">
+  <div class="grid-item"><img src="icon\ngoisao.jpg"  width="360" height="200" style="border-radius: 60%">
+  <br/><p><center>Tran Tuan Anh</center></p>
+  </div>
+  <div class="grid-item">Gioi thieu ban than</div>
+  <div class="grid-item">Ky nang</div>
+  <div class="grid-item">Qua trinh cong tac</div>
+  <div class="grid-item">Thong tin lien he</div>
+  <div class="grid-item">So thich ca nhan</div>
+</div>
+</body>
+</html>
+

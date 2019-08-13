@@ -62,27 +62,29 @@ nav ul li:active{
 }
 
 @media screen and (max-width: 580px) {
-  nav ul{
+  nav ul {
     max-height: 0;
   }
-  .showing{
+
+  .showing {
     max-height: 20em;
   }
-  nav ul li{
+
+  nav ul li {
     box-sizing: border-box;
     width: 100%;
     padding: 15px;
     text-align: left;
   }
-  .handle{
+
+  .handle {
     display: block;
   }
 }
-
 /*css chia khu vuc*/
 .grid-container {
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 30% 70%;
   background-color: #2196F3;
   padding: 10px;
 }
@@ -92,6 +94,7 @@ nav ul li:active{
   padding: 20px;
   font-size: 30px;
   text-align: center;
+  align-items: center;
 }
 
 h1{
@@ -118,6 +121,46 @@ p{
     height: 22px;
     background-color: #659cef;
     border-radius: 3px;
-        transition: width 500ms ease-in-out;
+    transition: width 500ms ease-in-out;
 }
+* {box-sizing: border-box;}
+
+.img-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  max-height: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  align-content: center;
+}
+
+.img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.img-container:hover .overlay {
+  opacity: 1;
+}
+
 

@@ -39,6 +39,15 @@ nav ul li{
 
 nav ul li:hover{
   background-color: #399077;
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+nav ul li:active{
+  background-color: #399077;
+  color: yellow;
+  background-color: transparent;
+  text-decoration: double;
 }
 
 .handle{

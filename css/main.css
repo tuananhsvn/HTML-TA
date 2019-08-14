@@ -30,11 +30,13 @@ nav ul{
   -moz-transition: max-height 0.4s;
   -o-transition: max-height 0.4s;
   transition: max-height 0.4s;
+
 }
 
 nav ul li{
   display: inline-block;
   padding: 20px;
+
 }
 
 nav ul li:hover{
@@ -59,6 +61,7 @@ nav ul li:active{
   cursor: pointer;
   color: white;
   display: none;
+
 }
 
 @media screen and (max-width: 580px) {
@@ -161,6 +164,19 @@ p{
 
 .img-container:hover .overlay {
   opacity: 1;
+}
+a:link, a:visited {
+    cursor: auto;
+}
+
+a:link:active, a:visited:active {
+    color: orange;
+}
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: auto;
 }
 
 
